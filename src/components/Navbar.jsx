@@ -15,13 +15,13 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-black w-full top-0 fixed z-40">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-8 lg:px-8">
         <div className="flex h-20 items-center justify-between border-b border-gray-800">
           <div className="flex items-center">
             <img
               src={Logos || "/placeholder.svg"}
               alt="Acep Handika Permana"
-              className="h-11 w-auto"
+              className="h-8 md:h-11 w-auto"
             />
           </div>
 

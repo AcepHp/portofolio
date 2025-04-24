@@ -3,16 +3,17 @@ import Certif from '../assets/certificate.png'
 
 export default function CertifSection() {
   return (
-    <section className="mb-[200px]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="mb-[100px] md:mb-[200px]">
+      <div className="mx-auto max-w-7xl px-8 lg:px-8">
         {/* Section Heading */}
         <div className='flex justify-between items-center text-white mb-2'>
             <div className='flex flex-1 items-center'>
-                <img src={Certif} alt="Certificate" className='size-10'/>
-                <h1 className='text-3xl font-bold ml-3'>My Certifications</h1>
+                <img src={Certif} alt="Certificate" className='size-5 md:size-7 lg:size-10'/>
+                <h1 className='text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold ml-1 md:ml-3'>My Certifications</h1>
             </div>
             <div>
-                <a href="#" className='text-[#3ccf91] text-md font-medium'>View All Certificate →</a>
+                <a href="#" className='text-[#3ccf91] text-sm md:text-md font-medium md:hidden'>View All →</a>
+                <a href="#" className='text-[#3ccf91] text-sm md:text-lg font-medium hidden md:block'>View All Certificate →</a>
             </div>
         </div>
 
@@ -21,7 +22,7 @@ export default function CertifSection() {
           {/* Card 1 */}
           <div className="flex-1 bg-[#0c0c0cea] rounded-xl p-6 shadow hover:shadow-lg transition-shadow duration-300">
             <div className="text-white font-medium space-y-2">
-              <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
+              <h3 className="text-lg font-semibold">Full-Stack Developer</h3>
               <p>EnigmaCamp</p>
               <p className="text-gray-400">Diterbitkan Mei 2022</p>
             </div>
@@ -30,7 +31,7 @@ export default function CertifSection() {
           {/* Card 2 */}
           <div className="flex-1 bg-[#0c0c0cea] rounded-xl p-6 shadow hover:shadow-lg transition-shadow duration-300">
             <div className="text-white font-medium space-y-2">
-              <h3 className="text-xl font-semibold">Front-End Development</h3>
+              <h3 className="text-lg font-semibold">Front-End Development</h3>
               <p>Dicoding Academy</p>
               <p className="text-gray-400">Diterbitkan April 2023</p>
             </div>
@@ -39,7 +40,7 @@ export default function CertifSection() {
           {/* Card 3 */}
           <div className="flex-1 bg-[#0c0c0cea] rounded-xl p-6 shadow hover:shadow-lg transition-shadow duration-300">
             <div className="text-white font-medium space-y-2">
-              <h3 className="text-xl font-semibold">Front-End Development</h3>
+              <h3 className="text-lg font-semibold">Front-End Development</h3>
               <p>Dicoding Academy</p>
               <p className="text-gray-400">Diterbitkan April 2023</p>
             </div>

@@ -1,6 +1,11 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import Logos from "../assets/logos.png"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
+
+
 
 const navigation = [
   { name: "Dashboard", href: "#", current: false },
@@ -13,8 +18,11 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
-    <Disclosure as="nav" className="bg-black w-full top-0 fixed z-40">
+    <Disclosure as="nav" className="bg-black w-full top-0 fixed z-40" data-aos="fade-down" data-aos-duration="500">
       <div className="mx-auto max-w-7xl px-8 lg:px-8">
         <div className="flex h-20 items-center justify-between border-b border-gray-800">
           <div className="flex items-center">

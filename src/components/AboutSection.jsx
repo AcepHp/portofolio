@@ -1,11 +1,37 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Profile from '../assets/profile-img.png'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 export default function AboutSection() {
+    const [aosDelay, setAosDelay] = useState(1500); // default mobile
+
+    useEffect(() => {
+        // Deteksi lebar layar saat mount
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth >= 768) { // md breakpoint
+                setAosDelay(200);
+            } else {
+                setAosDelay(1500);
+            }
+        };
+
+        handleResize(); // panggil saat pertama kali
+
+        window.addEventListener("resize", handleResize); // update jika di-resize
+        Aos.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
-        <div className='mb-[100px] md:mb-[200px]'>
+        <div className='mb-[100px] md:mb-[200px]' data-aos="fade-up" data-aos-duration="800" data-aos-delay={aosDelay}>
             <div className='mx-auto max-w-7xl px-8 lg:px-8 relative'>
-                
                 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
                     {/* Text Section */}
                     <div className="w-full lg:w-2/3 text-white">

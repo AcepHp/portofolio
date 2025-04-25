@@ -4,13 +4,23 @@ import Js from "../assets/js.png"
 import Atom from "../assets/atom.png"
 import Reduxs from "../assets/redux.png"
 import Tailwind from "../assets/tailwind.png"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 export default function ProjectSection() {
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    }, [])
     return (
         <div>
             <div className="mx-auto max-w-7xl px-8 lg:px-8 flex items-center mb-16 sm:mb-24 md:mb-[200px]">
                 <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto md:grid-rows-4 gap-8 md:gap-30 text-white w-full">
-                    <div className="flex flex-col gap-0 md:hidden">
+                    <div className="flex flex-col gap-0 md:hidden" data-aos="fade-up" data-aos-duration="800">
                         <div className="flex flex-1 justify-between items-center">
                             <div className="">
                                 <h1 className="text-lg sm:text-2xl font-bold">All Creative Works.</h1>
@@ -24,7 +34,7 @@ export default function ProjectSection() {
                         </p>
                     </div>
 
-                    <div className="hidden md:flex flex-col mb-8 md:mb-0">
+                    <div className="hidden md:flex flex-col mb-8 md:mb-0" data-aos="fade-up" data-aos-duration="800">
                         <h1 className="text-lg md:text-2xl sm:text-3xl font-bold mb-2">All Creative Works.</h1>
                         <p className="text-lg sm:text-xl text-gray-500 font-medium mb-2">
                             Here's some of my projects that I have worked on.
@@ -35,7 +45,7 @@ export default function ProjectSection() {
                     </div>
 
 
-                    <div className="md:row-span-2 mb-8 md:mb-0">
+                    <div className="md:row-span-2 mb-8 md:mb-0" data-aos="fade-up" data-aos-duration="800">
                         <div className="overflow-hidden rounded-lg bg-[#0c0c0cea] shadow-sm border border-gray-700 md:border-0">
                             <div>
                                 <img src={TrashTammer || "/placeholder.svg"} alt="Trash-Tammer" className="w-full" />
@@ -100,7 +110,7 @@ export default function ProjectSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="md:row-span-2 md:col-start-1 md:row-start-2 mb-8 md:mb-0 ">
+                    <div className="md:row-span-2 md:col-start-1 md:row-start-2 mb-8 md:mb-0 " data-aos="fade-up" data-aos-duration="800">
                         <div className="overflow-hidden rounded-lg bg-[#0c0c0cea] shadow-sm border border-gray-700 md:border-0">
                             <div>
                                 <img src={TrashTammer || "/placeholder.svg"} alt="Trash-Tammer" className="w-full" />
@@ -165,7 +175,7 @@ export default function ProjectSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="md:row-span-2 md:col-start-2 md:row-start-3">
+                    <div className="md:row-span-2 md:col-start-2 md:row-start-3" data-aos="fade-up" data-aos-duration="800">
                         <div className="overflow-hidden rounded-lg bg-[#0c0c0cea] shadow-sm border border-gray-700 md:border-0">
                             <div>
                                 <img src={TrashTammer || "/placeholder.svg"} alt="Trash-Tammer" className="w-full" />

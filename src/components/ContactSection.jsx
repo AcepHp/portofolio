@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Document from '../assets/docs.png'
 import Linkedin from '../assets/linkedin.png'
 import Email from '../assets/email.png'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 export default function ContactSection() {
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    }, [])
+
     return (
         <div>
             <div className='mx-auto max-w-7xl px-8 lg:px-8 mb-[100px] md:mb-[200px]'>
                 <div className="text-white flex flex-col items-center justify-center mb-10">
-                    <h1 className='text-2xl md:text-5xl font-bold mb-10'>Keep In Touch.</h1>
-                    <p className='text-md md:text-xl md:font-medium text-center'>I'm currently specializing in <span className='text-[#3ccf91]'>Front-end Development.</span></p>
-                    <p className='text-md md:text-xl md:font-medium text-center'>Feel free to get in touch and talk more about your projects.</p>
+                    <h1 className='text-2xl md:text-5xl font-bold mb-10' data-aos="fade-up" data-aos-duration="800" >Keep In Touch.</h1>
+                    <p className='text-md md:text-xl md:font-medium text-center' data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">I'm currently specializing in <span className='text-[#3ccf91]'>Front-end Development.</span></p>
+                    <p className='text-md md:text-xl md:font-medium text-center' data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Feel free to get in touch and talk more about your projects.</p>
                 </div>
-                <div className="flex flex-1 items-center justify-center">
+                <div className="flex flex-1 items-center justify-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div className="btn-sosmed flex gap-3">
                         <a
                             href='https://www.linkedin.com/in/acephp/'

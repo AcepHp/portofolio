@@ -1,17 +1,27 @@
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Github from '../assets/github-logo.png'
 import Linkedin from '../assets/linkedin.png'
 import Email from '../assets/email.png'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 export default function HeroSection() {
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    }, [])
+
     return (
         <div className='mt-[150px] md:mt-[300px] mb-[100px] md:mb-[200px]'>
             <div className="mx-auto max-w-7xl px-8 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
                     <div className='flex-1'>
                         {/* Background Icon */}
-                        <div className='relative'>
+                        <div className='relative' data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
                             <img
                                 src="https://svgsilh.com/svg/26432.svg"
                                 alt=""
@@ -27,34 +37,34 @@ export default function HeroSection() {
                         </div>
 
                         {/* Greeting */}
-                        <p className='text-xl sm:text-2xl md:text-4xl text-[#3ccf91] font-medium'>
+                        <p className='text-xl sm:text-2xl md:text-4xl text-[#3ccf91] font-medium' data-aos="fade-up" data-aos-delay="500">
                             Hey there!, I'm-
                         </p>
 
                         {/* Name */}
-                        <p className='text-[50px] sm:text-[60px] md:text-[100px] lg:text-[120px] xl:text-[150px] mt-[-10px] sm:mt-[-20px] md:mt-[-35px] text-white font-bold mb-3 md:mb-0'>
+                        <p className='text-[50px] sm:text-[60px] md:text-[100px] lg:text-[120px] xl:text-[150px] mt-[-10px] sm:mt-[-20px] md:mt-[-35px] text-white font-bold mb-3 md:mb-0' data-aos="fade-up" data-aos-delay="600">
                             Acep Handika.
                         </p>
 
                         {/* Role + Description */}
-                        <p className='text-md sm:text-xl md:text-2xl lg:text-3xl text-gray-400 font-medium mb-6 max-w-xl sm:max-w-2xl lg:max-w-4xl'>
+                        <p className='text-md sm:text-xl md:text-2xl lg:text-3xl text-gray-400 font-medium mb-6 max-w-xl sm:max-w-2xl lg:max-w-4xl' data-aos="fade-up" data-aos-delay="700">
                             <span className='text-white font-semibold'>Front End Developer.</span> Passionate about Computer Science and building user friendly interfaces.
                         </p>
 
                         {/* Current Focus */}
-                        <p className="text-base sm:text-lg md:text-xl text-gray-400 font-medium">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-400 font-medium" data-aos="fade-up" data-aos-delay="800">
                             🚀 Currently specializing in Frontend (React / Next.js)
                         </p>
-                        <p className="text-base sm:text-lg md:text-xl text-gray-400 font-medium mb-10">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-400 font-medium mb-10" data-aos="fade-up" data-aos-delay="900">
                             ⚡ Trainee at <span className='text-[#3ccf91]'>EnigmaCamp</span>
                         </p>
 
                         {/* Social Buttons */}
-                        <div className="btn-sosmed flex flex-wrap gap-3">
+                        <div className="btn-sosmed flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="1000">
                             <a
                                 href='https://github.com/AcepHp'
                                 target='_blank'
-                                type="button"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-x-1.5 rounded-md bg-[#1D1B1B] px-4 py-2 text-sm sm:text-md font-semibold text-white hover:bg-gray-900 transition"
                             >
                                 <img src={Github} alt="Github" className="size-5" />
@@ -63,7 +73,7 @@ export default function HeroSection() {
                             <a
                                 href='https://www.linkedin.com/in/acephp/'
                                 target='_blank'
-                                type="button"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-x-1.5 rounded-md bg-[#1D1B1B] px-4 py-2 text-sm sm:text-md font-semibold text-white hover:bg-gray-900 transition"
                             >
                                 <img src={Linkedin} alt="Linkedin" className="size-5" />

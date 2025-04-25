@@ -4,22 +4,21 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 export default function AboutSection() {
-    const [aosDelay, setAosDelay] = useState(1500); // default mobile
+    const [aosDelay, setAosDelay] = useState(1500);
 
     useEffect(() => {
-        // Deteksi lebar layar saat mount
         const handleResize = () => {
             const screenWidth = window.innerWidth;
-            if (screenWidth >= 768) { // md breakpoint
+            if (screenWidth >= 768) { 
                 setAosDelay(200);
             } else {
                 setAosDelay(1500);
             }
         };
 
-        handleResize(); // panggil saat pertama kali
+        handleResize(); 
 
-        window.addEventListener("resize", handleResize); // update jika di-resize
+        window.addEventListener("resize", handleResize); 
         Aos.init({
             duration: 1000,
             once: true,

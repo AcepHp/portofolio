@@ -8,9 +8,9 @@ import { useEffect } from "react"
 
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: false },
-  { name: "About", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Dashboard", href: "/", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Projects", href: "/project", current: false },
 ]
 
 function classNames(...classes) {

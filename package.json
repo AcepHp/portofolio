@@ -12,12 +12,18 @@
   "dependencies": {
     "@headlessui/react": "^2.2.2",
     "@heroicons/react": "^2.2.0",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/rapier": "^1.5.0",
     "@tailwindcss/vite": "^4.1.4",
     "aos": "^2.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-react": "^0.503.0",
+    "meshline": "^3.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router": "^7.5.2",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.4",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

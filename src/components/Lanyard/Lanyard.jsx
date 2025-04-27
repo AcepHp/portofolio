@@ -5,8 +5,8 @@ import { useGLTF, useTexture, Environment, Lightformer } from "@react-three/drei
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from "@react-three/rapier"
 import { MeshLineGeometry, MeshLineMaterial } from "meshline"
 
-const cardGLB = "../../../public/Lanyard/card.glb"
-const lanyard = "../../../public/Lanyard/Lanyard.png"
+const cardGLB = "/Lanyard/card.glb"
+const lanyard = "/Lanyard/Lanyard.png"
 
 import * as THREE from "three"
 

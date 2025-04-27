@@ -16,34 +16,34 @@ export default function AboutCertif() {
     const certificates = [
         {
             id: 1,
-            title: "Full-Stack Developer",
-            organization: "EnigmaCamp",
-            date: "Diterbitkan Mei 2022",
-            skills: ["Java", "Spring Boot", "React", "MySQL"],
-            color: "from-emerald-500/20 to-emerald-500/5",
-        },
-        {
-            id: 2,
-            title: "Front-End Development",
-            organization: "Dicoding Academy",
-            date: "Diterbitkan April 2023",
-            skills: ["JavaScript", "React", "CSS", "Responsive Design"],
+            title: "Belajar Dasar Pemrograman Web",
+            organization: "Dicoding",
+            date: "Published on 26 October 2024",
+            skills: ["HTML", "CSS", "JavaScript"],
             color: "from-blue-500/20 to-blue-500/5",
         },
         {
+            id: 2,
+            title: "Training of Full-Stack Developer",
+            organization: "EnigmaCamp",
+            date: "Published on 22 April 2025",
+            skills: ["SpringBoot", "React", "React-Native", "PostgreSQL"],
+            color: "from-emerald-500/20 to-emerald-500/5",
+        },
+        {
             id: 3,
-            title: "Front-End Development",
-            organization: "Dicoding Academy",
-            date: "Diterbitkan April 2023",
-            skills: ["HTML5", "CSS3", "JavaScript", "Web Performance"],
+            title: "VR Creation Training",
+            organization: "Smarteye.id X Telkom Indonesia",
+            date: "Published on 07 June 2022",
+            skills: ["Virtual Reality", "3D Modeling", "Unity"],
             color: "from-purple-500/20 to-purple-500/5",
         },
-        
-    ]
+    ];
+
 
     return (
         <section className="mb-[100px] md:mb-[150px]">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-8 sm:px-6 lg:px-8">
                 {/* Modern Section Header with Accent Line */}
                 <div className="relative mb-10 sm:mb-16 flex items-center" data-aos="fade-up" data-aos-duration="800">
                     <div className="flex-grow h-[2px] bg-gradient-to-r from-[#3ccf91]/10 to-[#3ccf91]/80 mr-4 sm:mr-6"></div>

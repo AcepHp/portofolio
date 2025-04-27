@@ -12,7 +12,7 @@ export default function AboutHeader() {
     });
   }, [])
   return (
-    <section className="mx-auto max-w-7xl px-8 sm:px-8 md:px-8 mt-20 sm:mt-24 md:mt-28 lg:mt-30 mb-16 sm:mb-20 md:mb-20 lg:mb-20 relative">
+    <section className="mx-auto max-w-7xl px-8 sm:px-8 md:px-8 mt-20 sm:mt-24 md:mt-28 lg:mt-30 mb-5 relative">
       <div className="bg-[#0a0a0a] border border-zinc-800 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_10px_50px_rgba(60,207,145,0.08)] p-6 sm:p-8 md:p-10 lg:p-12 backdrop-blur-md relative overflow-hidden transition-all duration-300 hover:shadow-[0_15px_60px_rgba(60,207,145,0.12)]" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
         {/* Enhanced gradient accent */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#3ccf91]/10 via-[#3ccf91]/5 to-transparent pointer-events-none" />

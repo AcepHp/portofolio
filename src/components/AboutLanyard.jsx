@@ -79,7 +79,7 @@ export default function AboutLanyard() {
                   </div>
 
                   {/* Lanyard container - Responsive height */}
-                  <div className="md:h-[480px] w-full max-w-[400px] mx-auto bg-black/30 rounded-lg overflow-hidden relative">
+                  <div className="md:h-[480px] h-[400px] w-full max-w-[400px] mx-auto bg-black/30 rounded-lg overflow-hidden relative">
                     <Suspense fallback={<LanyardFallback />}>
                       <Lanyard 
                         position={[0, 0, isMobile ? 18 : 15]} 

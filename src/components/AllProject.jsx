@@ -36,7 +36,7 @@ export default function AllProject() {
                     <div className="flex-grow h-[1px] bg-gradient-to-l from-[#3ccf91]/10 to-[#3ccf91]/80 ml-4 sm:ml-6"></div>
                 </div>
 
-                <div className="text-white flex flex-col md:flex-row gap-5 md:gap-10 mb-5 md:mb-10" >
+                <div className="text-white flex flex-col md:flex-row gap-5 md:gap-10 mb-5 md:mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                     <div className="overflow-hidden rounded-lg bg-[#0c0c0cea] shadow-sm border border-gray-700 md:border-0">
                         <div>
                             <img src={TrashTammer || "/placeholder.svg"} alt="Trash-Tammer" className="w-full" />
@@ -143,7 +143,7 @@ export default function AllProject() {
                     </div>
 
                 </div>
-                <div className="text-white flex flex-col md:flex-row gap-5 md:gap-10">
+                <div className="text-white flex flex-col md:flex-row gap-5 md:gap-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                     <div className="overflow-hidden rounded-lg bg-[#0c0c0cea] shadow-sm border border-gray-700 md:border-0">
                         <div>
                             <img src={Simadang || "/placeholder.svg"} alt="Trash-Tammer" className="w-full" />

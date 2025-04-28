@@ -45,7 +45,7 @@ export default function ProjectSection() {
                         <p className="text-lg sm:text-xl text-gray-500 font-medium mb-2">
                             Here's some of my projects that I have worked on.
                         </p>
-                        <a href="#" className="text-xl sm:text-2xl font-medium text-[#3ccf91]">
+                        <a href="/project" className="text-xl sm:text-2xl font-medium text-[#3ccf91]">
                             Explore more →
                         </a>
                     </div>

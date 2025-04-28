@@ -22,8 +22,8 @@ export default function CertifSection() {
             <h1 className='text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold ml-1 md:ml-3'>My Certifications</h1>
           </div>
           <div>
-            <a href="#" className='text-[#3ccf91] text-sm md:text-md font-medium md:hidden'>View All →</a>
-            <a href="#" className='text-[#3ccf91] text-sm md:text-lg font-medium hidden md:block'>View All Certificate →</a>
+            <a href="/about" className='text-[#3ccf91] text-sm md:text-md font-medium md:hidden'>View All →</a>
+            <a href="/about" className='text-[#3ccf91] text-sm md:text-lg font-medium hidden md:block'>View All Certificate →</a>
           </div>
         </div>
 

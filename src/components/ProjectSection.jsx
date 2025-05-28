@@ -31,7 +31,7 @@ export default function ProjectSection() {
                             <div className="">
                                 <h1 className="text-lg sm:text-2xl font-bold">All Creative Works.</h1>
                             </div>
-                            <a href="#" className="text-sm font-medium text-[#3ccf91]">
+                            <a href="/project" className="text-sm font-medium text-[#3ccf91]">
                                 Explore more →
                             </a>
                         </div>

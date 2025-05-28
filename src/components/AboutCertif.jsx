@@ -38,7 +38,24 @@ export default function AboutCertif() {
             skills: ["Virtual Reality", "3D Modeling", "Unity"],
             color: "from-purple-500/20 to-purple-500/5",
         },
+        {
+            id: 4,
+            title: "CSS Basic",
+            organization: "HackerRank",
+            date: "Published on 08 May 2025",
+            skills: ["CSS"],
+            color: "from-pink-500/20 to-pink-500/5",
+        },
+        {
+            id: 5,
+            title: "JavaScript Basic",
+            organization: "HackerRank",
+            date: "Published on 08 May 2025",
+            skills: ["JavaScript"],
+            color: "from-yellow-500/20 to-yellow-500/5",
+        },
     ];
+    
 
 
     return (

@@ -60,7 +60,7 @@ export default function HeroSection() {
                         </p>
 
                         {/* Social Buttons */}
-                        <div className="btn-sosmed flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="1000">
+                        <div className="btn-sosmed flex flex-nowrap gap-3" data-aos="fade-up" data-aos-delay="1000">
                             <a
                                 href='https://github.com/AcepHp'
                                 target='_blank'
